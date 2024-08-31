@@ -49,3 +49,45 @@ def test_successful_login(webdriver_browser, input_username, input_password):
     finally:
         # Close the browser
         driver.quit()
+
+@pytest.mark.parametrize("webdriver_browser, input_username, input_password, error_txt",
+                         [
+                             ('chrome', 'student', 'wrong_password', 'Your password is invalid'),
+                             ('chrome', 'wrong_student', 'Password123', 'Your username is invalid'),
+                             ('chrome', '', '', 'Your username is invalid'),
+                             ('chrome', 'student', '', 'Your password is invalid'),
+                             ('chrome', '', 'Password123', 'Your username is invalid')
+                         ]
+                         )
+def test_unsuccessful_login(webdriver_browser, input_username, input_password, error_txt):
+    try:
+        if webdriver_browser == "chrome":
+            driver = webdriver.Chrome()
+        elif webdriver_browser == "firefox":
+            driver = webdriver.Firefox()
+
+        # 1. Open the web application in a browser
+        driver.get("https://practicetestautomation.com/practice-test-login")
+
+        # 2. Enter invalid credentials (username and password) and submit the login form
+        username = driver.find_element(By.ID, "username")  # Replace with the correct element locator
+        password = driver.find_element(By.ID, "password")  # Replace with the correct element locator
+
+        username.send_keys(input_username)  # Replace with invalid username
+        password.send_keys(input_password)  # Replace with invalid password
+
+        login_button = driver.find_element(By.ID, "submit")  # Replace with the correct element locator
+        login_button.click()
+
+        # 3. Verify that the user is unsuccessfully logged in by checking for a specific element or page title
+        # Check for a specific element that appears only after unsuccessful login and the according error message
+        WebDriverWait(driver, 10).until(EC.text_to_be_present_in_element((By.ID, "error"), error_txt))
+
+        print("Login unsuccessful (%s). Test passed." % (error_txt))
+
+    except Exception as e:
+        print(f"Test failed: {e}")
+
+    finally:
+        # Close the browser
+        driver.quit()
