@@ -219,9 +219,7 @@ Each of these test cases should be meticulously documented, including the expect
 
 ------------------------------------------------------------------------------------------
 
-Imagine you join a team that will do a testing for google platform, how will you start to do the
-test plan, how to perform your testing, how will you deliver your test result. Try to design the
-overall test strategy if you are the owner of the google testing.
+Optional: Test Script Development Write an automated test script to verify the login functionality of a web application. The test script should.
 
 ------------------------------------------------------------------------------------------
 
