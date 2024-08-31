@@ -21,3 +21,5 @@ script should:
 Please include a link to GitHub for any code-based answers
 The Login Page: https://practicetestautomation.com/practice-test-login
 
+Find the answers in the QandA.txt file in this repo.
+In the simple_test.py you will find one example of a parameterazid pytest scenario.
