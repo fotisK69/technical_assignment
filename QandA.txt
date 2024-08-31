@@ -113,8 +113,8 @@ Each test case should be documented with expected and actual results, steps to r
 
 ------------------------------------------------------------------------------------------
 
-Document any possible test cases that you would perform in order to test the a form
-embedded in a website. Include testing about functionality, security, performance. The form will have the following objects text field with drag and drop file to upload a post button and a write article button
+Must do 2: Test strategy Imagine you join a team that will do a testing for google platform, how will you start to do the test plan, how to perform your testing, how will you deliver your test result. 
+Try to design the overall test strategy if you are the owner of the google testing.
 
 ------------------------------------------------------------------------------------------
 
