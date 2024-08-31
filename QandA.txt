@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------
 
-Document any possible test cases that you would perform in order to test the following form
-embedded in a website. Include testing about functionality, security, performance,
+Must do 1: Test Cases Design Document any possible test cases that you would perform in order to test the following form embedded in a website. 
+Include testing about functionality, security, performance, etc.
 
 ------------------------------------------------------------------------------------------
 
