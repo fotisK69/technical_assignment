@@ -1,5 +1,5 @@
 # Simple test case scanarious to verify:
-# First successful login in to the given web page with valid credentials 
+# First successful login in to the given web page with valid credentials and in addition compatibility Testing from cross-browser 
 # Second unsuccessful login in to the given web page with invalid credentials and combination
 
 import pytest
