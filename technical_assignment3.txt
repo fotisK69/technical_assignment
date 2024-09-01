@@ -4,7 +4,8 @@ Optional: Test Script Development Write an automated test script to verify the l
 
 ------------------------------------------------------------------------------------------
 
-Designing a test strategy for a platform as vast and complex as Google's requires a systematic and comprehensive approach. Below is a detailed outline of how to start the test plan, perform testing, and deliver test results if you were the owner of Google's testing.
+Designing a test strategy for a platform as vast and complex as Google's requires a systematic and comprehensive approach. 
+Below is a detailed outline of how to start the test plan, perform testing, and deliver test results if you were the owner of Google's testing.
 
 1. Test Strategy Overview
 
