@@ -7,6 +7,10 @@
 #
 # Usually it is recommended not to combine several scenarios in one test case 
 # like we do at the successful case by verifying also the cross-browser testing.
+#
+# This script is a basic starting point. Depending on the complexity of your web application, 
+# you might need to enhance it with more robust error handling, additional validations, or 
+# integration with a test framework like pytest or a CI/CD pipeline.
 
 import pytest
 from selenium import webdriver
