@@ -1,3 +1,7 @@
+# Simple test case scanarious to verify:
+# First successful login in to the given web page with valid credentials 
+# Second unsuccessful login in to the given web page with invalid credentials and combination
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
