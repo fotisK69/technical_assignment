@@ -5,7 +5,9 @@ Include testing about functionality, security, performance, etc.
 
 ------------------------------------------------------------------------------------------
 
-To thoroughly test a form embedded in a website, you would need to consider multiple aspects, including functionality, security, and performance. Below is a breakdown of the possible test cases categorized by these aspects:
+To thoroughly test a form embedded in a website, you would need to consider multiple aspects, including functionality, security, and performance. 
+Below is a breakdown of the possible test cases categorized by these aspects:
+
 1. Functionality Testing
 
 1.1. Field Validation
@@ -109,4 +111,5 @@ To thoroughly test a form embedded in a website, you would need to consider mult
 
 Summary
 
-Each test case should be documented with expected and actual results, steps to reproduce, and any observations or anomalies. Comprehensive testing across these areas ensures the form is robust, secure, user-friendly, and performs well under various conditions.
+Each test case should be documented with expected and actual results, steps to reproduce, and any observations or anomalies. 
+Comprehensive testing across these areas ensures the form is robust, secure, user-friendly, and performs well under various conditions.
