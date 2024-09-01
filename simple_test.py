@@ -1,6 +1,12 @@
-# Simple test case scanarious to verify:
-# First successful login in to the given web page with valid credentials and in addition compatibility Testing from cross-browser 
-# Second unsuccessful login in to the given web page with invalid credentials and combination
+# Two simple test cases to verify:
+#
+# First successful login in to the given web page with valid credentials
+# and in addition compatibility Testing for cross-browser testing.
+#
+# Second unsuccessful login in to the given web page with invalid credentials and combination.
+#
+# Usually it is recommended not to combine several scenarios in one test case 
+# like we do at the successful case by verifying also the cross-browser testing.
 
 import pytest
 from selenium import webdriver
@@ -10,6 +16,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
+# Successful login in to the given web page with valid credentials
+# and in addition compatibility Testing for cross-browser testing.
 @pytest.mark.parametrize("webdriver_browser, input_username, input_password",
                          [
                              ('firefox', 'student', 'Password123'),
@@ -54,6 +62,7 @@ def test_successful_login(webdriver_browser, input_username, input_password):
         # Close the browser
         driver.quit()
 
+# Unsuccessful login in to the given web page with invalid credentials and combination.
 @pytest.mark.parametrize("webdriver_browser, input_username, input_password, error_txt",
                          [
                              ('chrome', 'student', 'wrong_password', 'Your password is invalid'),
