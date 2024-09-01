@@ -27,6 +27,6 @@ Find the answers in the dedicated file for each assigment:
 
 [technical_assignment2.txt](https://github.com/fotisK69/technical_assigment/blob/main/technical_assignment2.txt)
 
-[technical_assignment3.txt](https://github.com/fotisK69/technical_assigment/blob/main/technical_assignment3.txt)
+[technical_assignment3.txt](https://github.com/fotisK69/technical_assigment/blob/main/technical_assignment3.txt) (optional)
 
 In the [simple_test.py](https://github.com/fotisK69/technical_assigment/blob/main/simple_test.py) you will find one example of a parameterazid pytest scenarios for successful and unsuccessful login in.
