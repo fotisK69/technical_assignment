@@ -1,0 +1,112 @@
+------------------------------------------------------------------------------------------
+
+Must do 1: Test Cases Design Document any possible test cases that you would perform in order to test the following form embedded in a website. 
+Include testing about functionality, security, performance, etc.
+
+------------------------------------------------------------------------------------------
+
+To thoroughly test a form embedded in a website, you would need to consider multiple aspects, including functionality, security, and performance. Below is a breakdown of the possible test cases categorized by these aspects:
+1. Functionality Testing
+
+1.1. Field Validation
+
+    Empty Field Submission: Test form submission with all fields left empty to check if appropriate error messages are displayed.
+    Field Type Validation: Enter incorrect data types (e.g., letters in a numeric field, numbers in a text-only field) to ensure that the form correctly handles type errors.
+    Mandatory Field Validation: Leave mandatory fields empty and submit to see if validation messages prompt the user to complete those fields.
+    Max Length Validation: Test by entering input that exceeds the maximum character length for text fields to ensure the form restricts it.
+    Min Length Validation: Enter input below the minimum character length required to verify that the form rejects it.
+    Dropdown Field Validation: Try submitting the form without selecting an option from a dropdown menu that has a default, non-selectable option (e.g., "Select...").
+    Checkboxes and Radio Buttons: Ensure that the form behaves correctly when required checkboxes or radio buttons are left unselected or selected incorrectly.
+    Date Field Validation: Enter invalid date formats and test the form's response.
+    Numeric Field Validation: Test entering alphanumeric or special characters in numeric fields.
+    Email Field Validation: Test valid and invalid email formats to ensure the form only accepts proper emails (e.g., username@domain.com).
+    Password Field Validation: Enter mismatched passwords in the "password" and "confirm password" fields to ensure the form catches discrepancies.
+    File Upload Validation: Attempt to upload files of invalid types or sizes (if applicable) to check for proper validation.
+
+1.2. Form Behavior
+
+    Default Field Values: Verify that the form fields have the correct default values when the form loads.
+    Tab Order Navigation: Check if the tab key navigates between form fields in a logical order.
+    Form Reset: Test if the "Reset" or "Clear" button clears all fields to their default values.
+    Auto-Fill Functionality: Test how the form responds to browser auto-fill actions.
+    Pre-Filled Form Submission: Test if the form handles pre-filled data (e.g., from a user's previous session) correctly.
+    Error Message Display: Ensure error messages are displayed near the relevant fields or in an obvious location when validation fails.
+    Success Message: Verify that a success message is shown after a successful submission.
+    Redirect on Success: If applicable, check that the form redirects the user to the correct page upon successful submission.
+
+2. Security Testing
+
+2.1. Input Validation
+
+    SQL Injection: Attempt to submit SQL queries through input fields to test for SQL injection vulnerabilities.
+    Cross-Site Scripting (XSS): Enter HTML/JavaScript code in text fields to check for XSS vulnerabilities.
+    Cross-Site Request Forgery (CSRF): Test if the form is vulnerable to CSRF attacks by submitting the form from an unauthorized context.
+    Field Overflows: Test buffer overflow by entering excessive data in each input field to see if it causes the application to behave unexpectedly.
+    Encoding Handling: Input encoded data (like HTML entities) to see if the form decodes it properly and safely.
+
+2.2. Form Submission
+
+    SSL/TLS Encryption: Verify that data is transmitted securely using HTTPS.
+    Session Management: Check if sensitive form submissions invalidate the user session or trigger re-authentication as necessary.
+    Anti-Bot Mechanisms: Test the CAPTCHA (if any) to ensure it properly detects and blocks automated submissions.
+
+2.3. Error Handling
+
+    Server-Side Validation: Confirm that all critical validation (like input sanitization) is also handled server-side, not just client-side.
+    Sensitive Data Exposure: Ensure that error messages don’t reveal sensitive information (e.g., database details or stack traces).
+
+3. Performance Testing
+
+3.1. Load Testing
+
+    High Load Submission: Test the form by simulating a large number of simultaneous submissions to see how it handles high traffic.
+    Concurrent Users: Simulate multiple users submitting the form simultaneously to test server response and concurrency handling.
+
+3.2. Form Submission Time
+
+    Response Time: Measure the time it takes for the form to submit and receive a response from the server.
+    Network Latency Simulation: Test the form under different network conditions (e.g., high latency) to see how it performs.
+
+3.3. Resource Usage
+
+    CPU/Memory Usage: Monitor CPU and memory usage on the server when the form is submitted under high load.
+    Database Performance: Check the impact of form submissions on the database, particularly with a high volume of submissions.
+
+4. Usability Testing
+
+4.1. User Experience
+
+    Ease of Use: Assess how intuitive and easy the form is to use from a user perspective.
+    Error Recovery: Test how easy it is for users to recover from errors (e.g., incorrect input).
+    Mobile Responsiveness: Test the form on various screen sizes and devices to ensure it’s fully responsive.
+    Accessibility: Check if the form is accessible according to WCAG guidelines (e.g., screen reader compatibility, keyboard navigation, color contrast).
+
+5. Compatibility Testing
+
+5.1. Browser Compatibility
+
+    Cross-Browser Testing: Test the form on different browsers (Chrome, Firefox, Safari, Edge) to ensure consistent behavior.
+    Cross-Device Testing: Ensure the form works on various devices (desktop, tablet, smartphone).
+
+5.2. Operating System Compatibility
+
+    Cross-OS Testing: Test the form across different operating systems (Windows, macOS, Linux, Android, iOS) to check for consistency.
+
+6. Accessibility Testing
+
+6.1. Screen Readers
+
+    Screen Reader Compatibility: Ensure all fields are accessible via screen readers like JAWS or NVDA.
+
+6.2. Keyboard Navigation
+
+    Keyboard-Only Access: Ensure the form can be fully navigated and submitted using only the keyboard.
+
+7. Localization Testing (if applicable)
+
+    Language Support: Ensure the form fields and validation messages are correctly translated and displayed for different languages.
+    Locale-Based Formatting: Verify that fields like date, currency, and phone numbers format correctly according to the locale.
+
+Summary
+
+Each test case should be documented with expected and actual results, steps to reproduce, and any observations or anomalies. Comprehensive testing across these areas ensures the form is robust, secure, user-friendly, and performs well under various conditions.
