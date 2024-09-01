@@ -22,6 +22,6 @@ Please include a link to GitHub for any code-based answers
 The Login Page: https://practicetestautomation.com/practice-test-login
 
 Find the answers in the dedicated file for each assigment:
-technical_assignment1.txt
+[technical_assignment1.txt](https://github.com/fotisK69/technical_assigment/blob/main/technical_assignment1.txt)
 
 In the [simple_test.py](https://github.com/fotisK69/technical_assigment/blob/main/simple_test.py) you will find one example of a parameterazid pytest scenarios for successful and unsuccessful login in.
