@@ -16,7 +16,7 @@ Prerequisites for python use:
 
 In my case I used PyCharm and both where already installed from previous projects.
 
-Explanation:
+Explanation for the successful test scenarios:
 
     Open the web application in a browser:
         The script uses Selenium's webdriver.Chrome() to open a new Chrome browser instance.
