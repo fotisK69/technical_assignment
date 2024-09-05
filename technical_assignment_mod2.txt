@@ -1,6 +1,8 @@
 ------------------------------------------------------------------------------------------
 
-Must do 2: Test strategy Imagine you join a team that will do a testing for google platform, how will you start to do the test plan, how to perform your testing, 
+Must do 2: Test strategy 
+
+Imagine you join a team that will do a testing for google platform, how will you start to do the test plan, how to perform your testing, 
 how will you deliver your test result. Try to design the overall test strategy if you are the owner of the google testing.
 
 ------------------------------------------------------------------------------------------
