@@ -39,6 +39,6 @@ Explanation:
 
 Customization
 
-    Replace "https://example.com/login", "username", "password", "loginButton", "dashboard", and "Dashboard" with the actual URLs, element locators, and expected page titles of your web application.
+    Some of the needed information like "login web-page", "username", "password", "loginButton", "dashboard", and "Dashboard" with the actual URLs, element locators, and expected page titles of your web application are in this simple example hardcoded.
 
 This script is a basic starting point. Depending on the complexity of your web application, you might need to enhance it with more robust error handling, additional validations, or integration with a test framework like pytest or a CI/CD pipeline.
